@@ -1,0 +1,36 @@
+<% include header.html %>
+
+    <div class="row">
+        <div class="ui grid">
+            <div class="twelve wide column">
+                <div class="ui segment">
+                    <h3 class="ui header"><%= topic.title %></h3>
+                    <div class="ui meta">
+                        发布于<%= topic.created_at %> • 作者 <%= topic.user.name %>
+                          • <%= topic.pv %> 次浏览 • <%= topic.comment %> 回复 • 
+                          <%= topic.tag %>
+                    </div>
+                    <div class="ui divider"></div>
+                    <div class="ui content">
+                        <%= topic.content %>
+                    </div>
+                </div>
+                <% include ./component/comment.html %>
+
+                
+            </div>
+            <div class="four wide column">
+
+                <% if (session.user) { %>
+                    <% include ./component/userCard.html %>
+                    <% include ./component/createCard.html %>
+                <% } %>
+                <% include ./component/noReplyCard.html %>
+                <% include ./component/linkCard.html %>
+
+            </div>
+
+        </div>
+    </div>
+
+    <% include footer.html %>

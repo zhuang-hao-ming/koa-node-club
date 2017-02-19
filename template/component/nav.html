@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="ui text menu">
+        <div class="item">node.js club</div>
+        <div class="item">一个分享与发现的地方</div>
+        <div class="ui right text menu">
+            <% if (session.user) { %>
+                <div class="item">
+                    <a href="/signout">登出</a>
+                </div>
+                <% } else { %>
+                    <div class="item">
+                        <a href="/signin">登录</a>
+                    </div>
+                    <div class="item">
+                        <a href="/signup">注册</a>
+                    </div>
+                <% } %>
+        </div>
+
+    </div>
+</div>

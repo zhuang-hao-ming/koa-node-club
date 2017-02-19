@@ -1,0 +1,22 @@
+<% include header.html %>
+
+    <div class="row">
+        <div class="ui grid">
+            <div class="twelve wide column">
+                <% include ./component/tag.html %>
+                <% include ./component/list.html %>
+                <% include ./component/pagination.html %>
+            </div>
+            <div class="four wide column">
+                <% if (session.user) { %>
+                    <% include ./component/userCard.html %>
+                    <% include ./component/createCard.html %>
+                <% } %>
+                <% include ./component/noReplyCard.html %>
+                <% include ./component/linkCard.html %>
+            </div>
+
+        </div>
+    </div>
+
+<% include footer.html %>

@@ -1,0 +1,16 @@
+                    <div class="ui card">
+                        <div class="content">
+                            <img src="/img/1.jpg" alt="" class="ui avatar left floated image">
+                            <div>
+                                <p><%= userInfo.name %></p>
+                                <p><%= userInfo.gender %></p>
+                            </div>
+                            <div class="description">
+                                <%= userInfo.signature %>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a href="/user/<%= userInfo.name %>"><i class="home icon"></i>个人主页</a>
+                            <a class="right floated"><i class="setting icon"></i>设置</a>
+                        </div>
+                    </div>

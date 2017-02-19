@@ -1,0 +1,15 @@
+
+<div class="row">
+    <% if (flash && flash.success) { %>
+    <div class="ui success message">
+        <i class="close icon"></i>
+        <p><%= flash.success %></p>
+    </div>
+    <% } %>
+    <% if (flash && flash.error) { %>
+    <div class="ui error message">
+        <i class="close icon"></i>
+        <p><%= flash.error %></p>
+    </div>
+    <% } %>
+</div>

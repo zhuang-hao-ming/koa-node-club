@@ -1,0 +1,22 @@
+
+
+<div class="ui bottom attached active tab segment">
+    <div class="ui list">
+        <% topics.forEach((topic, index) => { %>
+            <div class="item">
+                <a class="ui image" href="/user/<%= topic.user.name %>"> <img src="/img/1,jpg" alt=""> </a>
+                <div class="content">
+                    <a class="header" href="/topic/<%= topic._id %>"><%= topic.title %></a>
+                    <p class="topic">
+                        <a href="/user/<%= topic.user.name %>"><%= topic.user.name %></a>
+                        发起话题 • <%= topic.pv %> 次浏览 • <%= topic.comment %> 个回复 •
+                        <%= topic.updated_at %> • <%= topic.tag %>
+                    </p>
+                </div>
+            </div>
+            <% if (index < topic.length) { %>
+            <div class="ui divider"></div>
+            <% } %>
+        <% }) %>
+    </div>
+</div>

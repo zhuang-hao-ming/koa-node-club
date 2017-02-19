@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
+</head>
+
+<body>
+
+    <div class="ui container">
+        <div class="row">
+            <div class="ui text menu">
+                <div class="item">node.js club</div>
+                <div class="item">一个分享与发现的地方</div>
+                <div class="ui right text menu">
+                    <div class="right item">登录</div>
+                    <div class="right item">注册</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="ui grid">
+                <div class="twelve wide column">
+                    <div class="ui top attached tabular menu">
+                        <a href="/" class="item active">全部</a>
+                        <a href="" class="item">问答</a>
+                        <a href="" class="item">分享</a>
+                    </div>
+                    <div class="ui bottom attached active tab segment">
+                        <div class="ui list">
+                            <div class="item">
+                                <a class="ui image" href=""> <img src="/img/1,jpg" alt=""> </a>
+                                <div class="content">
+                                    <a class="header" href="">fwfew</a>
+                                    <p class="topic">浩铭发起了话题100次浏览100次回复</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui pagination menu">
+                        <a class="icon item">
+                            <i class="left arrow icon"></i>
+                        </a>
+                        <a class="active item">1</a>
+                        <a class="item">2</a>
+                        <a class="item">3</a>
+                        <a class="icon item">
+                            <i class="right arrow icon"></i>
+                        </a>
+                    </div>
+
+                    <form action="" class="ui form">
+                        <h2 class="ui header">发表话题</h2>
+                        <div class="field required">
+                            <label for="">板块</label>
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="tag">
+                                <div class="default text">板块</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="招聘">招聘</div>
+                                    <div class="item" data-value="招聘">招聘</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field required">
+                            <label for="">标题</label>
+                            <input type="text" name="title" placeholder="标题字数不少于10字">
+                        </div>
+                        <div class="field required">
+                            <label for="">内容</label>
+                            <textarea name="content" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <input type="submit" class="ui button" value="发布">
+                    </form>
+
+                    <div class="ui segment">
+                        <h3 class="ui header">标题</h3>
+                        <div class="ui meta">fewfwfwe</div>
+                        <div class="ui divider"></div>
+                        <div class="ui content">
+                            <p>fwefwefwfwef</p>
+                        </div>
+                    </div>
+
+                    <div class="ui segment">
+                        <div class="ui comments">
+                            <h3 class="ui dividing header">评论</h3>
+                            <div class="comment">
+                                <a href="" class="avatar">
+                                    <img src="/img/1.jpg" alt="">
+                                </a>
+                                <div class="content">
+                                    <a href="" class="author">
+                                        fwefw
+                                    </a>
+                                    <div class="metadata">
+                                        <span class="date">fwefwe</span>
+                                    </div>
+                                    <div class="text">
+                                        fewfwef
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <a href="" class="avatar">
+                                    <img src="/img/1.jpg" alt="">
+                                </a>
+                                <div class="content">
+                                    <a href="" class="author">
+                                        fwefw
+                                    </a>
+                                    <div class="metadata">
+                                        <span class="date">fwefwe</span>
+                                    </div>
+                                    <div class="text">
+                                        fewfwef
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="ui reply form">
+                                <div class="field">
+                                    <textarea></textarea>
+                                </div>
+                                <input type="submit" class="ui button" value="留言">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="four wide column">
+                    <div class="ui card">
+                        <div class="content">
+                            <b>友情链接</b>
+                            <div class="ui divider"></div>
+                            <div class="ui list">
+                                <div class="item">
+                                    <a href="https://cnodejs.org/" target="_blank"><img src="/images/cnode.png" style="width:100%"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui card">
+                        <div class="content">
+                            <img src="/img/1.jpg" alt="" class="ui avatar left floated image">
+                            <div>
+                                <p>fewfw</p>
+                                <p>男</p>
+                            </div>
+                            <div class="description">
+                                哈哈哈 哈哈哈
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a><i class="home icon"></i>个人主页</a>
+                            <a class="right floated"><i class="setting icon"></i>设置</a>
+                        </div>
+                    </div>
+                    <div class="ui card">
+                        <div class="content">
+                            <a class="ui green fluid button" href="/create">发表话题</a>
+                        </div>
+                    </div>
+                    <div class="ui card">
+                        <div class="content">
+                            <headr>无人回复话题</headr>
+                            <div class="ui divider"></div>
+                            <div class="ui list">
+                                <a class="item summary" href="">标题1</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

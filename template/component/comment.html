@@ -1,0 +1,33 @@
+<div class="ui segment">
+    <div class="ui comments">
+        <h3 class="ui dividing header">评论</h3>
+        <% comments.forEach(comment => { %>
+            <div class="comment">
+                <a href="/user/<%= comment.user.name %>" class="avatar">
+                    <img src="/img/1.jpg" alt="">
+                </a>
+                <div class="content">
+                    <a href="/user/<%= comment.user.name %>" class="author">
+                        <%= comment.user.name %>
+                    </a>
+                    <div class="metadata">
+                        <span class="date"><%= comment.updated_at %></span>
+                    </div>
+                    <div class="text">
+                        <%= comment.content %>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+            <% if (this.session && this.session.user) { %>
+                <form class="ui reply form" method="POST">
+                    <input type="hidden" name="topic_id" value="<%= topic._id %>">
+                    <div class="field">
+                        <textarea name="content"></textarea>
+                    </div>
+                    <input type="submit" class="ui button" value="留言">
+                </form>
+            <% } %>
+
+    </div>
+</div>

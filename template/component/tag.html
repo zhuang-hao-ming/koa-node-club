@@ -1,0 +1,7 @@
+
+<div class="ui top attached tabular menu">
+    <a href="/" class="item <%= (!nowTag || nowTag == tags[0]) ? 'active' : '' %>"><%= tags[0]%></a>
+    <% tags.slice(1).forEach(tag => { %>
+        <a href="/?tag=<%= tag %>" class="item <%= tag == nowTag ? 'active' : '' %>"><%= tag %></a>
+    <% }) %>
+</div>
