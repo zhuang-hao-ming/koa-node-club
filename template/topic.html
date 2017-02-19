@@ -6,7 +6,7 @@
                 <div class="ui segment">
                     <h3 class="ui header"><%= topic.title %></h3>
                     <div class="ui meta">
-                        发布于<%= topic.created_at %> • 作者 <%= topic.user.name %>
+                        发布于<%= helper.fromNow(topic.created_at) %> • 作者 <%= topic.user.name %>
                           • <%= topic.pv %> 次浏览 • <%= topic.comment %> 回复 • 
                           <%= topic.tag %>
                     </div>

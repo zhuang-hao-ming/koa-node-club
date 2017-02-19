@@ -4,13 +4,13 @@
     <div class="ui list">
         <% topics.forEach((topic, index) => { %>
             <div class="item">
-                <a class="ui image" href="/user/<%= topic.user.name %>"> <img src="/img/1,jpg" alt=""> </a>
+                <a class="ui image" href="/user/<%= topic.user.name %>"> <img src="<%= helper.emailToImgUrl(topic.user.email) %>" alt=""> </a>
                 <div class="content">
                     <a class="header" href="/topic/<%= topic._id %>"><%= topic.title %></a>
                     <p class="topic">
                         <a href="/user/<%= topic.user.name %>"><%= topic.user.name %></a>
                         发起话题 • <%= topic.pv %> 次浏览 • <%= topic.comment %> 个回复 •
-                        <%= topic.updated_at %> • <%= topic.tag %>
+                        <%= helper.fromNow(topic.updated_at) %> • <%= topic.tag %>
                     </p>
                 </div>
             </div>

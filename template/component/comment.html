@@ -4,14 +4,14 @@
         <% comments.forEach(comment => { %>
             <div class="comment">
                 <a href="/user/<%= comment.user.name %>" class="avatar">
-                    <img src="/img/1.jpg" alt="">
+                    <img src="<%= helper.emailToImgUrl(comment.user.email) %>" alt="">
                 </a>
                 <div class="content">
                     <a href="/user/<%= comment.user.name %>" class="author">
                         <%= comment.user.name %>
                     </a>
                     <div class="metadata">
-                        <span class="date"><%= comment.updated_at %></span>
+                        <span class="date"><%= helper.fromNow(comment.updated_at) %></span>
                     </div>
                     <div class="text">
                         <%= comment.content %>

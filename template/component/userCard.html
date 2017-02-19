@@ -1,6 +1,6 @@
                     <div class="ui card">
                         <div class="content">
-                            <img src="/img/1.jpg" alt="" class="ui avatar left floated image">
+                            <img src="<%= helper.emailToImgUrl(userInfo.email) %>" alt="" class="ui avatar left floated image">
                             <div>
                                 <p><%= userInfo.name %></p>
                                 <p><%= userInfo.gender %></p>

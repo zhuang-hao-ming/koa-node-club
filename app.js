@@ -36,6 +36,7 @@ app.use(function* (next) {
     this.state.session = this.session
     this.state.flash = this.flash
     this.state.tags = config.tags
+    this.state.helper = require('./lib/render-helper')
     yield next
 })
 /**
