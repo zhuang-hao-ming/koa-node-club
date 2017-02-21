@@ -8,7 +8,8 @@ const UserSchema = new Schema({
     gender: { type: String, required: true },
     signatrue: { type: String },
     created_at: { type: Date, default: Date.now },
-    updated_at: { type: Date, default: Date.now }
+    updated_at: { type: Date, default: Date.now },
+    active: { type: Boolean, default: false}
 })
 
 UserSchema.index({ name: 1 })
