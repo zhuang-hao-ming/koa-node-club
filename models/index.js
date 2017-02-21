@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const config = require('config-lite')
-
+mongoose.Promise = global.Promise
 mongoose.connect(config.mongodb.url)
     .then(() => {
         console.log('connect successfully')
